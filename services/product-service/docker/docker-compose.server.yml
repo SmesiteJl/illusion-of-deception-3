@@ -28,7 +28,7 @@ services:
 
       SERVER_PORT: 8083
 
-      SPRING_PROFILES_ACTIVE: "${ENABLE_DEBUG:+debug}"
+      SPRING_PROFILES_ACTIVE: "${ENABLE_DEBUG:-}"
     networks:
       - eat-easy-net
 

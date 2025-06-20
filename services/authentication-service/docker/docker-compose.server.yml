@@ -24,7 +24,7 @@ services:
 
       CUSTOM_SWAGGER_SERVER: ${BACKEND_ADDRESS}
 
-      SPRING_PROFILES_ACTIVE: "${ENABLE_DEBUG:+debug}"
+      SPRING_PROFILES_ACTIVE: "${ENABLE_DEBUG:-}"
     networks:
       - eat-easy-net
 
