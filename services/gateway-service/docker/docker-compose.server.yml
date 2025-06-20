@@ -13,7 +13,7 @@ services:
       FRONTEND_ADDRESS: ${FRONTEND_ADDRESS}
       BACKEND_ADDRESS: ${BACKEND_ADDRESS}
 
-      SPRING_PROFILES_ACTIVE: "server${ENABLE_DEBUG:+,debug}"
+      SPRING_PROFILES_ACTIVE: "server${ENABLE_DEBUG:-}"
     networks:
       - eat-easy-net
 
