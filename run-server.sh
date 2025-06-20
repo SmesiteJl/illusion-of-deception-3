@@ -28,12 +28,12 @@ echo "Запуск сборки сервисов..."
 
 echo "Запуск Docker-контейнеров..."
 
-docker compose -f docker/docker-compose.server.yml -p eat-easy up -d
-docker compose -f services/gateway-service/docker/docker-compose.server.yml -p eat-easy up -d --build
-docker compose -f services/authentication-service/docker/docker-compose.server.yml -p eat-easy up -d --build
-docker compose -f services/user-service/docker/docker-compose.server.yml -p eat-easy up -d --build
-docker compose -f services/product-service/docker/docker-compose.server.yml -p eat-easy up -d --build
-docker compose -f services/order-service/docker/docker-compose.server.yml -p eat-easy up -d --build
-docker compose -f services/cart-service/docker/docker-compose.server.yml -p eat-easy up -d --build
+docker-compose -f docker/docker-compose.server.yml -p eat-easy up -d
+docker-compose -f services/gateway-service/docker/docker-compose.server.yml -p eat-easy up -d --build
+docker-compose -f services/authentication-service/docker/docker-compose.server.yml -p eat-easy up -d --build
+docker-compose -f services/user-service/docker/docker-compose.server.yml -p eat-easy up -d --build
+docker-compose -f services/product-service/docker/docker-compose.server.yml -p eat-easy up -d --build
+docker-compose -f services/order-service/docker/docker-compose.server.yml -p eat-easy up -d --build
+docker-compose -f services/cart-service/docker/docker-compose.server.yml -p eat-easy up -d --build
 
 echo "Все сервисы успешно запущены!"
