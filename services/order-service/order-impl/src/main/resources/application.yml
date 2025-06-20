@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: order-service
@@ -27,7 +28,7 @@ spring:
       hibernate:
         format_sql: true
 server:
-  port: 8121
+  port: ${SERVER_PORT:8121}
   servlet:
     encoding:
       charset: UTF-8

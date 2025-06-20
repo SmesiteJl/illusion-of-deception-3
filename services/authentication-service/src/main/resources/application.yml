@@ -83,4 +83,4 @@ custom:
     secret-key: ${CUSTOM_INTERNAL_SECRET_KEY:secret-key}
 
 server:
-  port: 8081
+  port: ${SERVER_PORT:8081}
