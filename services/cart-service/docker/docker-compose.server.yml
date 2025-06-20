@@ -24,7 +24,6 @@ services:
       JWT_ACCESS_PUBLIC_KEY: "file:/eat-easy/security/public/access_public.pem"
 
       SPRING_PROFILES_ACTIVE: "${ENABLE_DEBUG:-}"
-
     networks:
       - eat-easy-net
 
